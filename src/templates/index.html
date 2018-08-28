@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Upload new File</h1>
+<form method="post" action="/" enctype="multipart/form-data">
+  <input type="file" name="img_file" class="col-sm-4">
+  <input type="submit" value="送信" class="btn">
+</form>
+
+  {% if filename and category %}
+<h4>
+  この画像は、「{{ category }}」 です。
+</h4>
+<p>
+  <img src="{{ filename }}" width="300" height="200">
+</p>
+  {% endif %}
+{% endblock %}

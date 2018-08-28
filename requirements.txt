@@ -1,0 +1,7 @@
+flask
+jupyter
+numpy
+requests
+tensorflow==1.7.1
+tensorflow-hub
+tensorflow-serving-api

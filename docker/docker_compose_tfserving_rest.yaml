@@ -1,0 +1,23 @@
+version: '3'
+services:
+  tfs_server:
+    image: chie8842/tfserving
+    ports:
+      - "8500:8500"
+      - "8501:8501"
+    volumes:
+      - "$PWD/saved_models:/models/food-nonfood"
+      - "$PWD/src/configs:/configs"
+    environment:
+      - CONFIG_FILE=/configs/model.conf
+  tfs_rest_client:
+    image: chie8842/intern_mlops
+    links:
+      - tfs_server:tfs_server
+    ports:
+      - 5000:5000
+    volumes:
+      - $PWD:/work
+    command: /bin/bash scripts/start_tfs_rest_client.sh
+
+
