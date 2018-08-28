@@ -1,0 +1,24 @@
+# vim
+*.swp
+*.swo
+
+# python
+.cache
+.coverage
+*.pyc
+__pycache__
+.python-version
+
+# log
+*.log
+logs/
+
+# data
+data/
+models/
+saved_models/
+src/static/uploaded_images/
+
+# Mac OS
+.DS_Store
+
