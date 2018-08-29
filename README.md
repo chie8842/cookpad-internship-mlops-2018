@@ -1,6 +1,6 @@
 # MLOps
 ## 講義資料の場所
-https://speakerdeck.com/chie8842/cookpad-internship-mlops-lecture-2018
+https://speakerdeck.com/chie8842/cookpad-internship-mlops-lecture-1
 
 ## 動作環境
 DockerがインストールされたUnix PC
